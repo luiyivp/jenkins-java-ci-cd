@@ -1,4 +1,4 @@
-# CI/CD with Jenkins, Docker, Java, Maven, Sonarqube, JFrog
+# CI/CD with Jenkins, Docker, Java, Maven, Sonarqube, Nexus
 
 This repository is based on
 [Build a Java app with Maven](https://jenkins.io/doc/tutorials/build-a-java-app-with-maven/)
