@@ -40,25 +40,25 @@ pipeline {
                 }
             }
         }
-        /*stage('Publish artifact') {
+        stage('Publish artifact') {
             agent any
             steps {
                 nexusArtifactUploader(
                     nexusVersion: 'nexus3',
                     protocol: 'http',
                     nexusUrl: 'nexus:8081',
-                    groupId: 'api',
+                    groupId: 'com.mycompany.app',
                     version: '1.0',
-                    repository: 'dotnet-releases',
+                    repository: 'maven-snapshots',
                     credentialsId: 'nexus',
                     artifacts: [
-                        [artifactId: 'netcoreAPI',
+                        [artifactId: 'javaApp',
                         classifier: '',
-                        file: 'src/netcore-api/bin/Debug/netcore-api.1.0.0.nupkg',
-                        type: 'nupkg']
+                        file: 'target/my-app-1.0.jar',
+                        type: 'jar']
                     ]
                 )
             }
-        }*/
+        }
     }
 }
