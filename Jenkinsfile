@@ -49,7 +49,7 @@ pipeline {
                     nexusUrl: 'nexus:8081',
                     groupId: 'com.mycompany.app',
                     version: '1.0',
-                    repository: 'maven-snapshots',
+                    repository: 'maven-releases',
                     credentialsId: 'nexus',
                     artifacts: [
                         [artifactId: 'javaApp',
